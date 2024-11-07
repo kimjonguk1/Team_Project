@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -714.6405,
-    "scrollLeft": -614,
+    "scrollTop": -711.4183,
+    "scrollLeft": -430,
     "zoomLevel": 0.72,
     "show": 431,
     "database": 4,
@@ -275,11 +275,13 @@
         "name": "theater",
         "comment": "영화관",
         "columnIds": [
+          "K9wxGjKs8Mtsv7h-Ne0dK",
           "wYPYrlBe70b3JDiHKB397",
           "v80MoT4UZg0pG2MYk3i8c",
           "1gNzqUWJHt5GZBpRR0hg5"
         ],
         "seqColumnIds": [
+          "K9wxGjKs8Mtsv7h-Ne0dK",
           "wYPYrlBe70b3JDiHKB397",
           "v80MoT4UZg0pG2MYk3i8c",
           "1gNzqUWJHt5GZBpRR0hg5"
@@ -293,7 +295,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1730938978737,
+          "updateAt": 1730966641303,
           "createAt": 1730938850124
         }
       },
@@ -1354,18 +1356,18 @@
         "tableId": "gsndtUMsXpxTOjgYSiCwt",
         "name": "th_name",
         "comment": "영화관명",
-        "dataType": "VARCHAR(20)",
+        "dataType": "INT",
         "default": "",
-        "options": 10,
+        "options": 8,
         "ui": {
-          "keys": 1,
+          "keys": 0,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730938931853,
+          "updateAt": 1730966661218,
           "createAt": 1730938866727
         }
       },
@@ -1412,20 +1414,20 @@
       "TRwr0k-96581nvw51K7J8": {
         "id": "TRwr0k-96581nvw51K7J8",
         "tableId": "RgcbzvPpjBr_tbYrqtAIc",
-        "name": "th_name",
-        "comment": "영화관명",
-        "dataType": "VARCHAR(20)",
+        "name": "th_code",
+        "comment": "영화코드",
+        "dataType": "INT",
         "default": "",
         "options": 8,
         "ui": {
           "keys": 2,
           "widthName": 60,
           "widthComment": 60,
-          "widthDataType": 75,
+          "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730938975889,
+          "updateAt": 1730966666733,
           "createAt": 1730938975888
         }
       },
@@ -1988,6 +1990,26 @@
           "updateAt": 1730942459472,
           "createAt": 1730942459468
         }
+      },
+      "K9wxGjKs8Mtsv7h-Ne0dK": {
+        "id": "K9wxGjKs8Mtsv7h-Ne0dK",
+        "tableId": "gsndtUMsXpxTOjgYSiCwt",
+        "name": "th_code",
+        "comment": "영화코드",
+        "dataType": "INT",
+        "default": "",
+        "options": 10,
+        "ui": {
+          "keys": 1,
+          "widthName": 60,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1730966642925,
+          "createAt": 1730966620414
+        }
       }
     },
     "relationshipEntities": {
@@ -2282,7 +2304,7 @@
             "wYPYrlBe70b3JDiHKB397"
           ],
           "x": 1485,
-          "y": 1209,
+          "y": 1221,
           "direction": 1
         },
         "end": {
@@ -3047,9 +3069,9 @@
       -1,
       {
         "name": 1730938880962,
-        "dataType": 1730938903355,
+        "dataType": 1730966661217,
         "comment": 1730938925339,
-        "options(primaryKey)": 1730938931851
+        "options(primaryKey)": 1730966644444
       }
     ],
     "v80MoT4UZg0pG2MYk3i8c": [
@@ -3080,10 +3102,10 @@
       -1,
       {
         "options(notNull)": 1730938975885,
-        "name": 1730938975885,
-        "dataType": 1730938975885,
+        "name": 1730966655484,
+        "dataType": 1730966661217,
         "default": 1730938975885,
-        "comment": 1730938975885
+        "comment": 1730966666732
       }
     ],
     "vywzuJgu_RNtaX6SwHCps": [
@@ -3438,6 +3460,18 @@
       1730942459461,
       -1,
       {}
+    ],
+    "K9wxGjKs8Mtsv7h-Ne0dK": [
+      "tableColumnEntities",
+      1730966620413,
+      -1,
+      {
+        "name": 1730966628892,
+        "dataType": 1730966634344,
+        "options(notNull)": 1730966636161,
+        "comment": 1730966639261,
+        "options(primaryKey)": 1730966642924
+      }
     ]
   }
 }
