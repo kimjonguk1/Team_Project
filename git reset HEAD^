@@ -1,0 +1,68 @@
+[33mcommit ae9558cb7d8c625087441331046c804478762345[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: dd99d8c 8bea4ba
+Author: bewatermyfriend <wjsguswo3@naver.com>
+Date:   Thu Nov 7 12:08:49 2024 +0900
+
+    안녕하세요 반갑습니다 "팀장"입니다.
+
+[33mcommit dd99d8c5ba8a49aa8533b2eafab41c0d8ee3f019[m
+Author: bewatermyfriend <wjsguswo3@naver.com>
+Date:   Thu Nov 7 12:06:47 2024 +0900
+
+    안녕하세요 반갑습니다 "팀장"입니다.
+
+[33mcommit 8bea4bafbb3efad573d359819c0638272d368a45[m
+Author: geniyuls <yulisis123@naver.com>
+Date:   Thu Nov 7 12:06:05 2024 +0900
+
+    Update README.md
+
+[33mcommit 2abd4a9e0d7c07347d94380c5413559eabfd09af[m
+Author: geniyuls <yulisis123@naver.com>
+Date:   Thu Nov 7 12:05:37 2024 +0900
+
+    Update README.md
+
+[33mcommit 89ca6d635731cc0abc62cfa9785da54d24845301[m
+Author: escurse <av1967@naver.com>
+Date:   Thu Nov 7 12:02:36 2024 +0900
+
+    [박재형]ERD 업로드
+    
+    ERD 업로드
+
+[33mcommit 4188bd8bd6ed6f0802ebf42bad8a1a6a73615ebd[m
+Author: escurse <av1967@naver.com>
+Date:   Thu Nov 7 11:20:05 2024 +0900
+
+    [박재형]README 수정
+    
+    완료 추가
+
+[33mcommit e1cfd9bca3350c6e23378457a6aac9561d5a7ab0[m
+Author: escurse <av1967@naver.com>
+Date:   Wed Nov 6 09:09:07 2024 +0900
+
+    [박재형]README 수정
+    
+    프로젝트 가이드 생성
+
+[33mcommit d1de9c9e3251816a1138e66def7558f540984d4b[m
+Author: escurse <av1967@naver.com>
+Date:   Wed Nov 6 09:05:34 2024 +0900
+
+    [박재형]README수정
+    
+    Hello World
+
+[33mcommit 3ebd0d93869321157228d867e1de2fe745b9bd8c[m
+Author: 김종욱 <148532342+kimjonguk1@users.noreply.github.com>
+Date:   Thu Oct 31 17:36:20 2024 +0900
+
+    Update README.md
+
+[33mcommit a7abe8f442c7dc932260dc1f37aa9b9ddcc43f69[m
+Author: 김종욱 <148532342+kimjonguk1@users.noreply.github.com>
+Date:   Thu Oct 31 10:45:35 2024 +0900
+
+    Initial commit
