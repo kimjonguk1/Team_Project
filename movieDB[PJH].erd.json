@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -340,
-    "scrollLeft": -520,
+    "scrollTop": -984,
+    "scrollLeft": -700,
     "zoomLevel": 0.85,
     "show": 431,
     "database": 4,
@@ -2325,16 +2325,16 @@
         "comment": "결제내역번호",
         "dataType": "INT",
         "default": "",
-        "options": 0,
+        "options": 10,
         "ui": {
-          "keys": 0,
+          "keys": 1,
           "widthName": 60,
           "widthComment": 74,
           "widthDataType": 60,
           "widthDefault": 60
         },
         "meta": {
-          "updateAt": 1730977500065,
+          "updateAt": 1730978270169,
           "createAt": 1730977384440
         }
       },
@@ -4348,7 +4348,8 @@
       {
         "name": 1730977493041,
         "dataType": 1730977495564,
-        "comment": 1730977500064
+        "comment": 1730977500064,
+        "options(primaryKey)": 1730978270167
       }
     ],
     "C17AqpgbkFnjSAO0PImhk": [
