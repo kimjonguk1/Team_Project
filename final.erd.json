@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -254.1049,
-    "scrollLeft": -684.7007,
+    "scrollTop": -276.1049,
+    "scrollLeft": -313.7007,
     "zoomLevel": 0.73,
     "show": 431,
     "database": 4,
@@ -64,7 +64,10 @@
       "lTY6fX4yXLtWIsDzkiprq"
     ],
     "indexIds": [],
-    "memoIds": []
+    "memoIds": [
+      "CEcUddVwBWg0j8qQ3lvKP",
+      "dd3XKFUR8nyihwgQPKLWF"
+    ]
   },
   "collections": {
     "tableEntities": {
@@ -2265,6 +2268,38 @@
           "updateAt": 1731312953520,
           "createAt": 1731312953520
         }
+      },
+      "CEcUddVwBWg0j8qQ3lvKP": {
+        "id": "CEcUddVwBWg0j8qQ3lvKP",
+        "value": "인물 검색 기능",
+        "ui": {
+          "x": 1032.4666,
+          "y": 471.3767,
+          "zIndex": 750,
+          "width": 116,
+          "height": 100,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1731330223213,
+          "createAt": 1731330203678
+        }
+      },
+      "dd3XKFUR8nyihwgQPKLWF": {
+        "id": "dd3XKFUR8nyihwgQPKLWF",
+        "value": "영화 검색 기능",
+        "ui": {
+          "x": 485.8914,
+          "y": 391.9244,
+          "zIndex": 753,
+          "width": 116,
+          "height": 100,
+          "color": ""
+        },
+        "meta": {
+          "updateAt": 1731330307238,
+          "createAt": 1731330299934
+        }
       }
     }
   },
@@ -3210,6 +3245,22 @@
       1731314525411,
       -1,
       {}
+    ],
+    "CEcUddVwBWg0j8qQ3lvKP": [
+      "memoEntities",
+      1731330203677,
+      -1,
+      {
+        "value": 1731330223213
+      }
+    ],
+    "dd3XKFUR8nyihwgQPKLWF": [
+      "memoEntities",
+      1731330299934,
+      -1,
+      {
+        "value": 1731330307237
+      }
     ]
   }
 }
