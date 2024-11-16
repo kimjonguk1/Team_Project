@@ -1,18 +1,31 @@
-# 프로젝트 주의 사항
-- 프로젝트 주제 선정.(완료, 영화)
-- 구현 기능 정리(가능하면 /대상/동작, 불가피한 대상은 예외).
-- 역할 분담.(완료)
-- ER 구조 정리(구현 기능에 따라 스키마와 테이블, 제약 조건 구조 정리) 및 데이터베이스 구축, 엔티티 클래스 구현.
-- 디자인 패턴 확립 < 조장은 조원이 디자인 패턴을 벗어나지 않는지 확인할 것.
-    - 반응형 구현 여부 정하기.(완료)
-    - 대표 색상 1가지 ~ 5가지 정하기
-    - 대표 폰트 정하기.(완료, 프리텐다드)
-    - 로고 정하기(구글에 Free Logo Maker 검색하면 많이 나옴).(완료, JGV)
+# 🎬 CGV 클론코딩
 
-# 사이트 정리
-- freepik.com -> 일러스트 자료 무료로 받는 곳.
-- dribbble.com -> 디자인 영감을 얻을 수 있다. (단, 클론 프로젝트는 의미가 없을 수 있다.) 
-- codepen.io -> 구현하기 어려운 기능을 검색할 경우 HTML, CSS, JS 코드와 함께 구동되는 것을 볼 수 있다.
+## 프로젝트 소개
+- 간단한 프로젝트 소개
 
-# 노션 링크
-https://tricky-bloom-e01.notion.site/Jongyul-Pirates-Movie-Theater-130221d78586808aa580cbaf5e7a7e6f?pvs=4
+## 팀원 구성
+
+| <a href="https://github.com/Nyeonjae"><img src="https://avatars.githubusercontent.com/u/185048916?v=4" width="80"></a> | <a href="https://github.com/geniyuls"><img src="https://avatars.githubusercontent.com/u/181185824?v=4" width="80"></a> | <a href="https://github.com/escurse"><img src="https://avatars.githubusercontent.com/u/180259666?v=4" width="80"></a> | <a href="https://github.com/kimjonguk1"><img src="https://avatars.githubusercontent.com/u/148532342?v=4" width="80"></a> |
+|:-----:|:-----:|:-----:|:-----:|
+| :crown:전현재 | 김종율 | 박재형 | 김종욱 |
+| 역할 | 역할 | 역할 | 역할 |
+
+## 개발 환경
+| **기술 스택** | **설명**                     |
+|:-------------:|------------------------------|
+|  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">           | 웹 페이지 구조 설계          |
+| <img src="https://img.shields.io/badge/Scss-green?style=flat&logo=Sass&logoColor=CC6699"/>        | CSS 전처리기로 스타일 관리    |
+| <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white">    | 동적 기능 및 프론트엔드 로직 |
+| <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=OpenJDK&logoColor=white">          | 백엔드 애플리케이션 개발     |
+| <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">    | 백엔드 프레임워크 사용       |
+
+## 개발 기간
+- 개발 기간 작성
+
+## 주요 기능
+- 주요 기능 작성
+
+## 노션 링크
+<a href="https://tricky-bloom-e01.notion.site/Jongyul-Pirates-Movie-Theater-130221d78586808aa580cbaf5e7a7e6f?pvs=4">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" width="80">
+</a>
