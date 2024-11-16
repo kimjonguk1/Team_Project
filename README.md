@@ -13,3 +13,6 @@
 - freepik.com -> 일러스트 자료 무료로 받는 곳.
 - dribbble.com -> 디자인 영감을 얻을 수 있다. (단, 클론 프로젝트는 의미가 없을 수 있다.) 
 - codepen.io -> 구현하기 어려운 기능을 검색할 경우 HTML, CSS, JS 코드와 함께 구동되는 것을 볼 수 있다.
+
+# 노션 링크
+https://tricky-bloom-e01.notion.site/Jongyul-Pirates-Movie-Theater-130221d78586808aa580cbaf5e7a7e6f?pvs=4
