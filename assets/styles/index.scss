@@ -1,0 +1,140 @@
+@charset "UTF-8";
+* {
+  list-style-type: none;
+  margin-block: 0;
+  margin-inline: 0;
+  padding-inline: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+}
+
+.advertisement {
+  width: 100%;
+  height: 5rem;
+  background-color: black;
+
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  > a {
+    width: 95%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+    > img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+#header {
+  width: 100%;
+  height: 10rem;
+  background-color: #f2f2f2;
+
+  > .content {
+    width: 100%;
+    height: 7rem;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    > .spring {
+      flex-grow: 1;
+    }
+
+    > .text {
+      font-size: 1.2rem;
+      color: #202020;
+    }
+
+
+    > a {
+      > img {
+        transform: translateY(6%);
+        width: 12rem;
+        height: 12rem;
+      }
+    }
+
+    > .text {
+      display: block;
+      transform: translate(-10%, 100%);
+
+    }
+
+    > .item-container {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+      justify-content: space-around;
+
+      > .ad {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+
+
+      > .item {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+
+        > a {
+          text-decoration: none;
+          color: #202020;
+
+          > img {
+            height: 2rem;
+          }
+
+          > .text {
+            display: block;
+            text-align: center;
+            white-space: nowrap;
+
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+#footer {
+  width: 100%;
+  background-color: green;
+
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  > .policy-container {
+    align-items: center;
+    border-bottom: 0.0625rem solid black;
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+
+    > .policy-list {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
