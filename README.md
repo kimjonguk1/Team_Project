@@ -1,5 +1,5 @@
 # 🎬 CGV 클론코딩
-- 이미지 삽입
+<img src="https://newsroom.etomato.com/userfiles/20240401_112826_116930170.jpg">
 
 ## 프로젝트 소개
 - CGV의 주요 기능을 클론하여 영화 예매 웹사이트 제작
