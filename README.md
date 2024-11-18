@@ -29,6 +29,6 @@
 <img src="https://tricky-bloom-e01.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fbba77931-e5b0-47ad-bf2b-0d24647cd0c4%2F1d835dad-57e4-4c60-ada5-d88a6736f506%2Ferd.png?table=block&id=140221d7-8586-8014-97c8-ed8e8f8cebee&spaceId=bba77931-e5b0-47ad-bf2b-0d24647cd0c4&width=1420&userId=&cache=v2">
 
 ## 노션 링크
-<a target="_blank" href="https://tricky-bloom-e01.notion.site/Jongyul-Pirates-Movie-Theater-130221d78586808aa580cbaf5e7a7e6f?pvs=4">
+<a href="https://tricky-bloom-e01.notion.site/Jongyul-Pirates-Movie-Theater-130221d78586808aa580cbaf5e7a7e6f?pvs=4" target="_blank">
   <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png" alt="Notion" width="80">
 </a>
