@@ -20,7 +20,7 @@
 | <img src="https://img.shields.io/badge/springboot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white">    | 백엔드 프레임워크 사용       |
 
 ## 개발 기간
-- 개발 기간 작성
+- 2024.11.18 ~
 
 ## 주요 기능
 - 주요 기능 작성
