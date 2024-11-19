@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 * {
   list-style-type: none;
   margin-block: 0;
@@ -8,8 +9,16 @@
 
 body {
   width: 100vw;
-  height: 100vh;
-  background-color: red;
+  background-color: #f2f2f2;
+
+  align-items: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+
+
 }
 
 .advertisement {
@@ -37,104 +46,204 @@ body {
 
 #header {
   width: 100%;
-  height: 10rem;
-  background-color: #f2f2f2;
+  height: auto;
+  background-color: #ffffff;
 
-  > .content {
-    width: 100%;
-    height: 7rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    > .content-left {
+      max-width: 100%;
+      width: 45%;
 
-    > .spring {
-      flex-grow: 1;
-    }
-
-    > .text {
-      font-size: 1.2rem;
-      color: #202020;
-    }
-
-
-    > a {
-      > img {
-        transform: translateY(6%);
-        width: 12rem;
-        height: 12rem;
-      }
-    }
-
-    > .text {
-      display: block;
-      transform: translate(-10%, 100%);
-
-    }
-
-    > .item-container {
+      height: 7rem;
       align-items: center;
       display: flex;
       flex-direction: row;
-      gap: 1rem;
-      justify-content: space-around;
+      flex-grow: 0;
+      justify-content: center;
 
-      > .ad {
-        align-items: center;
-        display: flex;
-        justify-content: center;
+
+      > .spring {
+        flex-grow: 1;
+      }
+
+      > .text {
+        font-size: 1.2rem;
+        color: #202020;
       }
 
 
-      > .item {
+      > a {
+        > img {
+          transform: translateY(6%);
+          width: auto;
+          height: 4rem;
+        }
+      }
+
+      > .text {
+        color: #202020;
+        display: block;
+        transform: translate(-5%, 100%);
+        white-space: nowrap;
+
+      }
+
+    }
+
+    .content-right {
+      max-width: 100%;
+      width: 45%;
+
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 0;
+      justify-content: center;
+
+
+      > .item-container {
         align-items: center;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+        white-space: nowrap;
 
 
-        > a {
-          text-decoration: none;
-          color: #202020;
+        > .ad {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
 
-          > img {
-            height: 2rem;
-          }
+          > a {
 
-          > .text {
-            display: block;
-            text-align: center;
-            white-space: nowrap;
-
+            > img {
+              height: 2.8rem;
+            }
           }
         }
+
+        > .item {
+          align-items: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+
+
+          > a {
+
+            text-decoration: none;
+            color: #202020;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+
+            > img {
+              height: 2.4rem;
+            }
+
+            > .text {
+              display: block;
+              text-align: center;
+              white-space: nowrap;
+
+            }
+          }
+        }
+
+
       }
 
 
     }
   }
+
+
+#main {
+  width: 100%;
+  height: 20rem;
+  background-color: #ffffff;
+
 }
+
 
 #footer {
   width: 100%;
-  background-color: green;
+  background-color: #f8f8f8;
 
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
-  > .policy-container {
-    align-items: center;
-    border-bottom: 0.0625rem solid black;
-    height: 10rem;
-    display: flex;
-    flex-direction: row;
+  > .footer-menu {
 
-    > .policy-list {
+
+    > .policy-container {
+      align-items: flex-end;
+      border-bottom: 0.0625rem solid #ebebeb;
+      box-sizing: border-box;
+      height: 8.3rem;
       display: flex;
       flex-direction: row;
+      justify-content: flex-start;
+      padding-bottom: 1.7rem;
+
+      > .policy-list {
+        align-items: flex-end;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: center;
+
+        > .item {
+          display: flex;
+          flex-direction: row;
+
+          > a {
+            color: #666;
+            white-space: nowrap;
+            text-decoration: none;
+            font-size: 0.9rem;
+
+            > b {
+              color: #222;
+              font-weight: 700;
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #article {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3rem;
+    padding-top: 1.7rem;
+
+    & a {
+      color: #666666;
+    }
+
+    > .company {
+
+      > .text {
+        color: #666666;
+        font-size: 0.9rem;
+      }
+
     }
   }
 }
+
