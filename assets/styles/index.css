@@ -135,6 +135,9 @@ body {
   flex-direction: column;
   justify-content: center;
 }
+#footer > .footer-menu {
+  width: 100%;
+}
 #footer > .footer-menu > .policy-container {
   align-items: flex-end;
   border-bottom: 0.0625rem solid #ebebeb;
