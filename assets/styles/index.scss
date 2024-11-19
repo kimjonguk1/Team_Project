@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
 * {
   list-style-type: none;
   margin-block: 0;
@@ -22,20 +23,21 @@ body {
 }
 
 .advertisement {
+  max-width: 100%;
   width: 100%;
   height: 5rem;
   background-color: black;
-
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
 
   > a {
-    width: 95%;
+    width: 980px;
+    height: 80px;
     align-items: center;
     display: flex;
     justify-content: center;
-
 
     > img {
       max-width: 100%;
@@ -48,23 +50,26 @@ body {
   width: 100%;
   height: auto;
   background-color: #ffffff;
-
   align-items: center;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-end;
+
+  > .content {
+    max-width: 100%;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 5.5rem;
+    justify-content: center;
 
     > .content-left {
-      max-width: 100%;
-      width: 45%;
-
       height: 7rem;
       align-items: center;
       display: flex;
       flex-direction: row;
-      flex-grow: 0;
       justify-content: center;
-
 
       > .spring {
         flex-grow: 1;
@@ -73,14 +78,14 @@ body {
       > .text {
         font-size: 1.2rem;
         color: #202020;
+        white-space: nowrap;
       }
-
 
       > a {
         > img {
           transform: translateY(6%);
-          width: auto;
-          height: 4rem;
+          width: 117px;
+          height: 54px;
         }
       }
 
@@ -88,23 +93,15 @@ body {
         color: #202020;
         display: block;
         transform: translate(-5%, 100%);
-        white-space: nowrap;
-
       }
-
     }
 
     .content-right {
-      max-width: 100%;
-      width: 45%;
-
       align-items: center;
       display: flex;
       flex-direction: row;
-      flex-grow: 0;
       justify-content: center;
-
-
+      // 광고 , 로그인 , 회원가입 , MY JGV , 고객센터
       > .item-container {
         align-items: center;
         display: flex;
@@ -112,38 +109,36 @@ body {
         gap: 2rem;
         justify-content: center;
         white-space: nowrap;
-
-
+        // 현대카드 광고
         > .ad {
           align-items: center;
           display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
+          flex-direction: row;
+          justify-content: center;
+          transform: translateX(-30%);
 
           > a {
-
             > img {
-              height: 2.8rem;
+              width: 138px;
+              height: 39px;
             }
           }
         }
 
+        // 로그인 회원가입 MY JCV 고객센터 li 태그
         > .item {
           align-items: center;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
 
-
           > a {
-
             text-decoration: none;
             color: #202020;
             align-items: center;
             display: flex;
             flex-direction: column;
             justify-content: center;
-
 
             > img {
               height: 2.4rem;
@@ -153,17 +148,80 @@ body {
               display: block;
               text-align: center;
               white-space: nowrap;
-
             }
           }
         }
-
-
       }
-
-
     }
   }
+}
+
+#nav {
+  width: 100%;
+  height: 40px;
+
+  background-color: #ffffff;
+  border-top: 0.0625rem solid #CACACA;
+  border-bottom: 2px solid #FB4357;
+
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+
+  > .nav-menu {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: center;
+
+    > .item {
+      > h2 {
+        > a {
+          color: black;
+          text-decoration: none;
+          text-align: left;
+          font-size: 16px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+
+  > .search-form {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    > .label {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      > .search {
+        transform: translateX(-85%);
+        width: 180px;
+        border-top: 0.0625rem solid transparent;
+        border-bottom: 0.0625rem solid transparent;
+        border-left: 0.0625rem solid #CACACA;
+        border-right: 0.0625rem solid #CACACA;
+        outline: none;
+        padding-left: 7px;
+
+        & img {
+          width: 10px;
+          height: 26px;
+        }
+      }
+    }
+
+  }
+}
 
 
 #main {
@@ -173,20 +231,15 @@ body {
 
 }
 
-
 #footer {
   width: 100%;
   background-color: #f8f8f8;
-
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
 
   > .footer-menu {
-
-    width: 100%;
-
     > .policy-container {
       align-items: flex-end;
       border-bottom: 0.0625rem solid #ebebeb;
@@ -238,12 +291,10 @@ body {
     }
 
     > .company {
-
       > .text {
         color: #666666;
         font-size: 0.9rem;
       }
-
     }
   }
 }
