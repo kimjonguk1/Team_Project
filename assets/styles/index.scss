@@ -164,18 +164,17 @@ body {
   border-top: 0.0625rem solid #CACACA;
   border-bottom: 2px solid #FB4357;
 
-  align-items: center;
+  align-items: stretch;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 
 
   > .nav-menu {
-    align-items: center;
+    align-items: stretch;
     display: flex;
     flex-direction: row;
     gap: 3rem;
-    justify-content: center;
 
     > .item {
       > h2 {
@@ -190,34 +189,56 @@ body {
     }
   }
 
+  > .spring {
+    flex-grow: 1;
+    }
+
   > .search-form {
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
 
-
-    > .label {
+    > .search-container {
       align-items: center;
       display: flex;
       flex-direction: row;
       justify-content: center;
 
-      > .search {
-        transform: translateX(-85%);
-        width: 180px;
-        border-top: 0.0625rem solid transparent;
-        border-bottom: 0.0625rem solid transparent;
-        border-left: 0.0625rem solid #CACACA;
-        border-right: 0.0625rem solid #CACACA;
-        outline: none;
-        padding-left: 7px;
+      > .label {
+        align-items: center;
+        border-right: 0.0625rem solid black;
+        border-left: 0.0625rem solid black;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
 
-        & img {
-          width: 10px;
-          height: 26px;
+        position: relative;
+
+        > .search {
+          width: 15rem;
+          border: none;
+          font-size: 16px;
+          padding: 0.2rem 0.5rem;
+
+        }
+
+        > button  {
+
+          background-color: transparent;
+          border: 0.0625rem solid transparent;
+          padding: 0.2rem;
+          position: absolute;
+
+
+          > img {
+            width: 1.5rem;
+
+          }
+
         }
       }
+
     }
 
   }
@@ -226,9 +247,13 @@ body {
 
 #main {
   width: 100%;
-  height: 20rem;
+  height: 100%;
   background-color: #ffffff;
 
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 #footer {
