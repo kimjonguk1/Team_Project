@@ -1,322 +1,201 @@
 @charset "UTF-8";
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+@import "global";
 
 * {
   list-style-type: none;
-  margin-block: 0;
   margin-inline: 0;
+  margin-block: 0;
   padding-inline: 0;
+
 }
 
 body {
-  width: 100vw;
-  background-color: #f2f2f2;
-
-  align-items: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
+  @include flex(column, center, center);
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 
 
+  > .frame {
+
+    @include minmaxWidth(980px);
+
+  }
+
 }
 
-.advertisement {
-  max-width: 100%;
-  width: 100%;
-  height: 5rem;
-  background-color: black;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 
-  > a {
-    width: 980px;
-    height: 80px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
-
-    > img {
-      max-width: 100%;
-      height: auto;
-    }
-  }
+#advertisement {
+  @include minmaxWidth(100%);
+  @include minmaxHeight(80px);
+  @include flex(column, center, center, 0);
+  background-color: #000000;
 }
 
 #header {
-  width: 100%;
-  height: 7rem;
-  background-color: #ffffff;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  @include minmaxHeight(112px);
+  @include flex(row, center, flex-start, 0);
 
-  > .content {
-    max-width: 100%;
-    width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    gap: 5.5rem;
-    justify-content: center;
-    position: relative;
+  > .info-wrapper {
+    @include flex(row, center, flex-end, 2rem);
 
-    > .content-left {
-      height: 7rem;
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-
-      > .spring {
-        flex-grow: 1;
-      }
-
-      > .text {
-        font-size: 1.2rem;
-        color: #202020;
-        white-space: nowrap;
-      }
-
+    > .item {
       > a {
+        @include flex(column, center, center, 0);
+        text-decoration: none;
+
+
         > img {
-          transform: translateY(6%);
-          width: 117px;
-          height: 54px;
+          width: 36px;
+          cursor: pointer;
+        }
+
+        > .text {
+          color: rgb(102, 102, 102);
+          font-size: 13px;
+          font-weight: 400;
+          left: 18px;
         }
       }
 
-      > .text {
-        color: #202020;
-        display: block;
-        transform: translate(-5%, 100%);
-      }
+    }
+  }
+
+  > h1 {
+    > .text {
+      font-size: 16px;
+      font-weight: 300;
+      height: 24px;
+      width: 202.641px;
+      line-height: 24px;
+      letter-spacing: 5.008px;
+
     }
 
-    .content-right {
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      // 광고 , 로그인 , 회원가입 , MY JGV , 고객센터
-      > .item-container {
-        align-items: center;
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        justify-content: center;
-        white-space: nowrap;
-        // 현대카드 광고
-        > .ad {
-          align-items: center;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          transform: translateX(-30%);
+    > a {
+      text-decoration: none;
 
-          > a {
-            > img {
-              width: 138px;
-              height: 39px;
-            }
-          }
-        }
-
-        // 로그인 회원가입 MY JCV 고객센터 li 태그
-        > .item {
-          align-items: center;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-
-          > a {
-            text-decoration: none;
-            color: #202020;
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-
-            > img {
-              height: 2.4rem;
-            }
-
-            > .text {
-              display: block;
-              text-align: center;
-              white-space: nowrap;
-            }
-          }
-        }
+      > img {
+        height: 53px;
+        width: 117px;
       }
     }
   }
 }
-
 
 #nav {
-  top: 12rem;
-  left: 0;
-  width: 100%;
-  height: 50px;
-
-  background-color: #ffffff;
-  border-top: 0.0625rem solid #CACACA;
+  @include minmaxHeight(50px);
+  @include minmaxWidth(100%);
+  @include flex(row, center, center,0 );
+  border-top: 1px solid #cacaca;
   border-bottom: 2px solid #FB4357;
 
-  display: flex;
-
-
-
   > .nav-wrapper {
-
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-grow: 1;
-    width: 100%;
+    @include flex(row, center, flex-start, 1rem);
+    @include minmaxWidth(980px);
 
 
+    > .search-wrapper {
+      @include flex(row, center, center, 0);
+      border-right: 0.0625rem solid #cacaca;
+      border-left: 0.0625rem solid #cacaca;
+      padding: 0 0.6rem;
+
+
+      > .search {
+        align-items: center;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+
+
+        > .keyword {
+          height: 24px;
+          width: 200px;
+          border: none;
+          line-height: 24px;
+          font-size: 16px;
+          font-weight: 500;
+          outline: none;
+
+          &::placeholder {
+            color: #000000;
+            font-weight: 600;
+          }
+
+        }
+
+        > button {
+
+          background-color: transparent;
+          border: 0.0625rem solid transparent;
+          padding: 0.2rem;
+          position: absolute;
+
+          > img {
+            width: 1.8rem;
+          }
+        }
+
+      }
+
+    }
 
     > .nav-menu {
-      width: 50%;
-
-      align-items: center;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      gap: 3rem;
+      @include flex(row, center, flex-start, 3rem);
 
       > .item {
+
         > h2 {
+          font-size: 16px;
+          white-space: nowrap;
+
           > a {
-            color: black;
+            color: #000000;
             text-decoration: none;
-            text-align: left;
-            font-size: 16px;
-            white-space: nowrap;
           }
         }
       }
-    }
 
-
-    > .spring {
-      width: 16%;
-      flex-grow: 1;
-    }
-
-    > .search-form {
-      width: 39%;
-
-      display: flex;
-      justify-content: flex-start;
-      white-space: nowrap;
-
-
-      > .search-container {
-
-        > .label {
-          height: 1.5rem;
-          border-right: 0.0625rem solid #CACACA;
-          border-left: 0.0625rem solid #CACACA;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-
-
-          > .search {
-
-            width: 180px;
-            border: none;
-            font-size: 16px;
-            padding: 0.2rem 0.5rem;
-            outline: none;
-
-
-            &::placeholder {
-              color: #000000;
-              font-weight: 600;
-            }
-
-          }
-
-          > button {
-            background-color: transparent;
-            border: 0.0625rem solid transparent;
-            padding: 0.2rem;
-            cursor: pointer;
-            position: relative;
-
-
-            > img {
-              width: 2rem;
-
-            }
-
-          }
-        }
-      }
     }
   }
 }
 
-
 #main {
-  width: 100%;
-  height: 100%;
-  background-color: #ffffff;
 
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 #footer {
-  width: 100%;
+  @include minmaxHeight(432px);
+  @include minmaxWidth(100%);
+  @include flex(column, center, flex-end, 0);
   background-color: #f8f8f8;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  color: #666666;
 
-  > .footer-menu {
+  > .footer-wrapper {
+    @include minmaxHeight(150px);
+    @include minmaxWidth(980px);
+
+
     > .policy-container {
-      align-items: flex-end;
+      @include flex(row, flex-start, center, 0);
+      @include minmaxHeight(19px);
       border-bottom: 0.0625rem solid #ebebeb;
-      box-sizing: border-box;
-      height: 8.3rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
       padding-bottom: 1.7rem;
 
       > .policy-list {
-        align-items: flex-end;
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        justify-content: center;
+        @include flex(row, flex-start, center, 1rem);
 
         > .item {
-          display: flex;
-          flex-direction: row;
 
           > a {
-            color: #666;
+            color: #666666;
             white-space: nowrap;
             text-decoration: none;
             font-size: 0.9rem;
+            font-weight: 700;
 
             > b {
-              color: #222;
+              color: #222222;
               font-weight: 700;
               text-decoration: underline;
             }
@@ -324,14 +203,12 @@ body {
         }
       }
     }
+
   }
 
   #article {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 0.3rem;
+    @include flex(column, flex-start, flex-end, 0);
+    @include minmaxHeight(80px);
     padding-top: 1.7rem;
 
     & a {
@@ -341,12 +218,10 @@ body {
     > .company {
       > .text {
         color: #666666;
-        font-size: 0.9rem;
+        font-size: 0.7rem;
+        font-weight: 600;
       }
     }
   }
+
 }
-
-
-
-
