@@ -4,8 +4,8 @@
   "settings": {
     "width": 2000,
     "height": 2000,
-    "scrollTop": -301.0645,
-    "scrollLeft": -4,
+    "scrollTop": -763.0645,
+    "scrollLeft": -156,
     "zoomLevel": 0.73,
     "show": 431,
     "database": 4,
@@ -506,7 +506,8 @@
           "KPPnVGPCbWUWBjFpugCgk",
           "WgBn7eGfDgLv3R5gZP-eo",
           "l7H3WXYXWi1qFYFhYxJ_N",
-          "71n5EGRNyQeI5SrQS4fyd"
+          "71n5EGRNyQeI5SrQS4fyd",
+          "u16CcpeW6fiJFUHg-oDHy"
         ],
         "seqColumnIds": [
           "k0Ysfvb0mIPo4F4ok8n_J",
@@ -520,7 +521,8 @@
           "KPPnVGPCbWUWBjFpugCgk",
           "WgBn7eGfDgLv3R5gZP-eo",
           "l7H3WXYXWi1qFYFhYxJ_N",
-          "71n5EGRNyQeI5SrQS4fyd"
+          "71n5EGRNyQeI5SrQS4fyd",
+          "u16CcpeW6fiJFUHg-oDHy"
         ],
         "ui": {
           "x": 14.6519,
@@ -531,7 +533,7 @@
           "color": ""
         },
         "meta": {
-          "updateAt": 1731487117143,
+          "updateAt": 1732800052301,
           "createAt": 1731391925184
         }
       },
@@ -2874,6 +2876,26 @@
           "updateAt": 1731487631976,
           "createAt": 1731487631976
         }
+      },
+      "u16CcpeW6fiJFUHg-oDHy": {
+        "id": "u16CcpeW6fiJFUHg-oDHy",
+        "tableId": "23wp2MoIbua5xjYIPpDTD",
+        "name": "us_is_admin",
+        "comment": "관리자",
+        "dataType": "BOOLEAN",
+        "default": "FALSE",
+        "options": 8,
+        "ui": {
+          "keys": 0,
+          "widthName": 65,
+          "widthComment": 60,
+          "widthDataType": 60,
+          "widthDefault": 60
+        },
+        "meta": {
+          "updateAt": 1732800077800,
+          "createAt": 1732800052301
+        }
       }
     },
     "relationshipEntities": {
@@ -3420,7 +3442,7 @@
             "k0Ysfvb0mIPo4F4ok8n_J"
           ],
           "x": 214.6519,
-          "y": 1301.8674,
+          "y": 1325.8674,
           "direction": 8
         },
         "end": {
@@ -5029,6 +5051,18 @@
       1731487631974,
       -1,
       {}
+    ],
+    "u16CcpeW6fiJFUHg-oDHy": [
+      "tableColumnEntities",
+      1732800052300,
+      -1,
+      {
+        "name": 1732800060055,
+        "dataType": 1732800064959,
+        "options(notNull)": 1732800066028,
+        "comment": 1732800077799,
+        "default": 1732800070933
+      }
     ]
   }
 }
