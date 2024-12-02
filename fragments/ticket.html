@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ticket</title>
+    <link rel="stylesheet" type="text/css" th:href="@{'/ticket/assets/styles/index.css'}">
+    <script defer th:src="@{'/ticket/assets/scripts/index.js'}"></script>
+
+</head>
+<body>
+<div class="button-container">
+    <a class="content-bar-timetable" href="#">
+        <img class="image" alt="상영시간표" th:src="@{'/ticket/assets/images/titmetable.png'}">
+        &nbsp 상영 시간표</a>
+    <a class="content-bar-retry" href="#">
+        <img class="image" alt="예매다시하기" th:src="@{'/ticket/assets/images/retry.png'}">
+        &nbsp 예매 다시하기</a>
+</div>
+
+<section class="control-bar" id="control-bar">
+    <form class="space">
+        <button type="button" name="left-button" class="icon-box left-button">
+            <img alt="시트 왼쪽" th:src="@{'/ticket/assets/images/left-click.png'}" class="arrows">
+            <span>영화선택</span>
+        </button>
+        <div>
+            <span class="poster"></span>
+        </div>
+        <div class="title">
+                <span>
+                    <a>제목</a>
+                </span>
+            <span>2D</span>
+            <span>연령제한</span>
+        </div>
+        <div class="theater-title">
+            <span>극장</span>
+            <span>일시</span>
+            <span>상영관</span>
+            <span>인원</span>
+        </div>
+        <div class="theater-content">
+            <span><a th:text="${theater.getThName()}"></a></span>
+            <span>2024.01.01(월) 16:43</span>
+            <span th:text="${cinema.getCiName()}"></span>
+        </div>
+        <div class="seat-title">
+            <span>좌석명</span>
+            <span>좌석번호</span>
+        </div>
+        <div class="seat-content">
+        </div>
+        <div class="price-title">
+        </div>
+        <div class="price-content">
+
+        </div>
+        <button type="button" name="seat-right-button-before" class="icon-box seat-right-button-before">
+            <img alt="오른쪽 클릭전" th:src="@{'/ticket/assets/images/right-click-before.png'}" class="arrows">
+            <span class="seat-right-text">결제선택</span>
+        </button>
+        <button type="button" name="seat-right-button-after" class="icon-box seat-right-button-after"
+                style="display: none">
+            <img alt="오른쪽 클릭 후" th:src="@{'/ticket/assets/images/right-click-after.png'}" class="arrows">
+            <span class="seat-right-text">결제선택</span>
+        </button>
+        <button type="button" name="payment-button" class="payment-button" style="display: none">
+            <img alt="결제하기" th:src="@{'/ticket/assets/images/check.png'}" class="check-image">
+            <span class="payment-check">결제하기</span>
+        </button>
+    </form>
+</section>
+<div class="add">
+    <img class="image" src="https://adimg.cgv.co.kr/images/202411/MorningCalm/996x140.jpg" alt="">
+</div>
+
+
+</body>
+</html>
