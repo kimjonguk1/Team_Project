@@ -6,12 +6,11 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>ticket</title>
-    <link rel="stylesheet" type="text/css" th:href="@{'/ticket/assets/styles/index.css'}">
-    <script defer th:src="@{'/ticket/assets/scripts/index.js'}"></script>
-
+    <link rel="stylesheet" type="text/css" href="/ticket/assets/styles/index.css">
+    <script defer src="/ticket/assets/scripts/index.js"></script>
 </head>
 <body>
-<div class="button-container">
+<div class="button-container" th:fragment="button-container">
     <a class="content-bar-timetable" href="#">
         <img class="image" alt="상영시간표" th:src="@{'/ticket/assets/images/titmetable.png'}">
         &nbsp 상영 시간표</a>
@@ -20,7 +19,7 @@
         &nbsp 예매 다시하기</a>
 </div>
 
-<section class="control-bar" id="control-bar">
+<section class="control-bar" id="control-bar" th:fragment="control-bar">
     <form class="space">
         <button type="button" name="left-button" class="icon-box left-button">
             <img alt="시트 왼쪽" th:src="@{'/ticket/assets/images/left-click.png'}" class="arrows">
@@ -59,7 +58,7 @@
 
         </div>
         <button type="button" name="seat-right-button-before" class="icon-box seat-right-button-before">
-            <img alt="오른쪽 클릭전" th:src="@{'/ticket/assets/images/right-click-before.png'}" class="arrows">
+            <img alt="오른쪽 클릭전" src="/ticket/assets/images/right-click-before.png" class="arrows">
             <span class="seat-right-text">결제선택</span>
         </button>
         <button type="button" name="seat-right-button-after" class="icon-box seat-right-button-after"
@@ -73,7 +72,7 @@
         </button>
     </form>
 </section>
-<div class="add">
+<div class="add" th:fragment="add">
     <img class="image" src="https://adimg.cgv.co.kr/images/202411/MorningCalm/996x140.jpg" alt="">
 </div>
 
